@@ -103,6 +103,38 @@ requirement_groups:
   - Stripped Jungle Wood
   - Jungle Beam
 
+  ## Minecraft:Acacia_Logs
+  Any Acacia Log Variant:
+  - Acacia Log
+  - Acacia Wood
+  - Stripped Acacia Log
+  - Stripped Acacia Wood
+  - Acacia Beam
+
+  ## Minecraft:Dark_Oak_Logs
+  Any Dark Oak Log Variant:
+  - Dark Oak Log
+  - Dark Oak Wood
+  - Stripped Dark Oak Log
+  - Stripped Dark Oak Wood
+  - Dark Oak Beam
+
+  ## Minecraft:Crimson_Logs
+  Any Crimson Log Variant:
+  - Crimson Log
+  - Crimson Wood
+  - Stripped Crimson Log
+  - Stripped Crimson Wood
+  - Crimson Beam
+
+  ## Minecraft:Warped_Logs
+  Any Warped Log Variant:
+  - Warped Log
+  - Warped Wood
+  - Stripped Warped Log
+  - Stripped Warped Wood
+  - Warped Beam
+
 stack_sizes:
   Double Chest:
     quantity_multiplier: 54 # 9x6 Stacks
@@ -548,5 +580,105 @@ resources:
       recipe_type: Cutting
       requirments:
         Jungle Sign: -1
+    - Output: 1
+      recipe_type: Cutting
+
+  Acacia Planks:
+    recipes:
+    - output: 6
+      recipe_type: Sawing
+      requirements:
+        Stripped Acacia Log: -1
+    - output: 6
+      recipe_type: Sawing
+      requirements:
+        Stripped Acacia Wood: -1
+    - Output: 4
+      recipe_type: Crafting
+      requirments:
+        Any Acacia Wood Variant: -1
+    - Output: 1
+      recipe_type: Cutting
+      requirments:
+        Acacia Door: -1
+    - Output: 1
+      recipe_type: Cutting
+      requirments:
+        Acacia Sign: -1
+    - Output: 1
+      recipe_type: Cutting
+
+  Dark Oak Planks:
+    recipes:
+    - output: 6
+      recipe_type: Sawing
+      requirements:
+        Stripped Dark Oak Log: -1
+    - output: 6
+      recipe_type: Sawing
+      requirements:
+        Stripped Dark Oak Wood: -1
+    - Output: 4
+      recipe_type: Crafting
+      requirments:
+        Any Dark Oak Wood Variant: -1
+    - Output: 1
+      recipe_type: Cutting
+      requirments:
+        Dark Oak Door: -1
+    - Output: 1
+      recipe_type: Cutting
+      requirments:
+        Dark Oak Sign: -1
+    - Output: 1
+      recipe_type: Cutting
+
+  Crimson Planks:
+    recipes:
+    - output: 6
+      recipe_type: Sawing
+      requirements:
+        Stripped Crimson Log: -1
+    - output: 6
+      recipe_type: Sawing
+      requirements:
+        Stripped Crimson Wood: -1
+    - Output: 4
+      recipe_type: Crafting
+      requirments:
+        Any Crimson Wood Variant: -1
+    - Output: 1
+      recipe_type: Cutting
+      requirments:
+        Crimson Door: -1
+    - Output: 1
+      recipe_type: Cutting
+      requirments:
+        Crimson Sign: -1
+    - Output: 1
+      recipe_type: Cutting
+
+  Warped Planks:
+    recipes:
+    - output: 6
+      recipe_type: Sawing
+      requirements:
+        Stripped Warped Log: -1
+    - output: 6
+      recipe_type: Sawing
+      requirements:
+        Stripped Warped Wood: -1
+    - Output: 4
+      recipe_type: Crafting
+      requirments:
+        Any Warped Wood Variant: -1
+    - Output: 1
+      recipe_type: Cutting
+      requirments:
+        Warped Door: -1
+    - Output: 1
+      recipe_type: Cutting
+      requirments:
+        Warped Sign: -1
     - Output: 1
       recipe_type: Cutting
