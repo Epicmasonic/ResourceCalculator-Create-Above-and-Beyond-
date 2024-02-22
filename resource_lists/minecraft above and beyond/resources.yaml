@@ -143,6 +143,14 @@ requirement_groups:
   - Stripped Warped Wood
   - Warped Beam
 
+  ## Minecraft:Sand
+  Any Sand Variant:
+  - Sand
+  - Red Sand
+  - Black Sand
+  - Orange Sand
+  - White Sand
+
 stack_sizes:
   Double Chest:
     quantity_multiplier: 54 # 9x6 Stacks
@@ -1196,4 +1204,74 @@ resources:
       recipe_type: Packing
       requirements:
         Warped Stem: -4
+    - recipe_type: Raw Resource
+
+  Sponge:
+    recipes:
+    - output: 1
+      recipe_type: Import
+      requirements:
+        Silver Coin: -16
+    - recipe_type: Raw Resource
+    - output: 1
+      recipe_type: Bulk Blasting
+      requirements:
+        Wet Sponge: -1
+    - output: 1
+      recipe_type: Smelting
+      requirements:
+        Wet Sponge: -1
+        Fuel: -1
+    - output: 1
+      recipe_type: Electric Smelting
+      requirements:
+        Wet Sponge: -1
+        Energy: -2000
+    - output: 1
+
+  Wet Sponge:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Glass:
+    - output: 1
+      recipe_type: Bulk Blasting
+      requirements:
+        Any Sand Variant: -1
+    - output: 1
+      recipe_type: Smelting
+      requirements:
+        Any Sand Variant: -1
+        Fuel: -1
+    - output: 1
+      recipe_type: Electric Smelting
+      requirements:
+        Any Sand Variant: -1
+        Energy: -2000
+    - output: 1
+    - output: 1
+      recipe_type: Bulk Blasting
+      requirements:
+        Glass Spines: -1
+    - output: 1
+      recipe_type: Smelting
+      requirements:
+        Glass Spines: -1
+        Fuel: -1
+    - output: 1
+      recipe_type: Electric Smelting
+      requirements:
+        Glass Spines: -1
+        Energy: -2000
+    - output: 1
+    - recipe_type: Raw Resource
+
+  Lapis Lazuli Ore:
+    - recipe_type: Raw Resource
+
+  Lapis Lazuli Block:
+    - output: 1
+      recipe_type: Packing
+      requirements:
+        Lapis Lazuli: -9
     - recipe_type: Raw Resource
