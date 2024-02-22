@@ -491,6 +491,7 @@ resources:
       recipe_type: Crafting
       requirments:
         Any Oak Log Variant: -1
+    - recipe_type: Raw Resource
     - Output: 4
       recipe_type: Crafting
       requirments:
@@ -522,6 +523,7 @@ resources:
       recipe_type: Crafting
       requirments:
         Any Spruce Log Variant: -1
+    - recipe_type: Raw Resource
     - Output: 1
       recipe_type: Cutting
       requirments:
@@ -549,6 +551,7 @@ resources:
       recipe_type: Crafting
       requirments:
         Any Birch Log Variant: -1
+    - recipe_type: Raw Resource
     - Output: 1
       recipe_type: Cutting
       requirments:
@@ -576,6 +579,7 @@ resources:
       recipe_type: Crafting
       requirments:
         Any Jungle Log Variant: -1
+    - recipe_type: Raw Resource
     - Output: 1
       recipe_type: Cutting
       requirments:
@@ -603,6 +607,7 @@ resources:
       recipe_type: Crafting
       requirments:
         Any Acacia Log Variant: -1
+    - recipe_type: Raw Resource
     - Output: 1
       recipe_type: Cutting
       requirments:
@@ -630,6 +635,7 @@ resources:
       recipe_type: Crafting
       requirments:
         Any Dark Oak Log Variant: -1
+    - recipe_type: Raw Resource
     - Output: 1
       recipe_type: Cutting
       requirments:
@@ -657,6 +663,7 @@ resources:
       recipe_type: Crafting
       requirments:
         Any Crimson Log Variant: -1
+    - recipe_type: Raw Resource
     - Output: 1
       recipe_type: Cutting
       requirments:
@@ -684,6 +691,7 @@ resources:
       recipe_type: Crafting
       requirments:
         Any Warped Log Variant: -1
+    - recipe_type: Raw Resource
     - Output: 1
       recipe_type: Cutting
       requirments:
