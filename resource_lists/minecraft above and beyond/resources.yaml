@@ -42,6 +42,7 @@ recipe_types:
   ## Other Battery Powered Stuff
   Pulverizer: "Break {IN_ITEMS} down into {OUT_ITEM} using {ITEM Energy}"
   Electric Smelting: "Use a redstone furnace to smelt {IN_ITEMS} into {OUT_ITEM} using {ITEM Energy}"
+  Phytogenic Insolator: "Grow {OUT_ITEM} out of {IN_ITEMS}"
 
   ## --- Thermal Expansion ---
   Stirling Dynamo: "Fuel a stirling dynamo with {IN_ITEMS} to generate {ITEM Energy}"
@@ -54,6 +55,11 @@ recipe_types:
   ## --- Unique ---
   Import: "Import {OUT_ITEM} for {IN_ITEMS} using {ITEM Energy}"
   Sell: "Sell {IN_ITEMS} for {OUT_ITEM} using {ITEM Energy}"
+
+  ## --- Luck Based ---
+  Lucky Milling: "Mill {IN_ITEMS} down into {OUT_ITEM} (Not guaranteed)"
+  Lucky Crushing: "Crush {IN_ITEMS} down into {OUT_ITEM} (Not guaranteed)"
+  Lucky Pulverizer: "Break {IN_ITEMS} down into {OUT_ITEM} using {ITEM Energy} (Not guaranteed)"
 
 requirement_groups:
   ## Forge:Cobblestone
@@ -704,3 +710,112 @@ resources:
       recipe_type: Cutting
       requirments:
         Warped Trapdoor: -1
+
+  Bedrock:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Sand:
+    recipes:
+    - recipe_type: Raw Resource
+    - output: 16
+      recipe_type: Import
+      requirements:
+        Silver Coin: -4
+    - output: 1
+      recipe_type: Lucky Pulverizer
+      requirements:
+        Any Cobblestone Variant: -1
+        Gravel: 1
+        Energy: -4000
+    - output: 1
+      recipe_type: Pulverizer
+      requirements:
+        Gravel: -1
+        Energy: -4000
+    - output: 1
+      recipe_type: Crushing
+      requirements:
+        Gravel: -1
+    - output: 1
+      recipe_type: Milling
+      requirements:
+        Sandstone: -1
+
+  Red Sand:
+    recipes:
+    - output: 1
+      recipe_type: Milling
+      requirements:
+        Terracotta: -1
+    - output: 1
+      recipe_type: Milling
+      requirements:
+        Granite: -1
+    - recipe_type: Raw Resource
+    - output: 1
+      recipe_type: Casting Table
+      requirements:
+        mB Destabilized Redstone: -50
+        Sand: -1
+
+  Gravel:
+    recipes:
+    - output: 1
+      recipe_type: Milling
+      requirements:
+        Cobblestone: -1
+    - output: 1
+      recipe_type: Pulverizer
+      requirements:
+        Any Cobblestone Variant: -1
+        Energy: -4000
+    - output: 16
+      recipe_type: Import
+      requirements:
+        Silver Coin: -2
+    - recipe_type: Raw Resource
+
+  Gold Ore:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Iron Ore:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Coal Ore:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Nether Gold Ore:
+    recipes:
+    - recipe_type: Raw Resource
+
+  Oak Log:
+    recipes:
+    - recipe_type: Raw Resource
+    - output: 16
+      recipe_type: Import
+      requirements:
+        Silver Coin: -4
+    - output: 6
+      recipe_type: Phytogenic Insolator
+      requirements:
+        Oak Sapling: -1
+        mB Water: -1500
+        Energy: -60000
+
+  Spruce Log:
+    recipes:
+    - recipe_type: Raw Resource
+    - output: 16
+      recipe_type: Import
+      requirements:
+        Silver Coin: -4
+    - output: 6
+      recipe_type: Phytogenic Insolator
+      requirements:
+        Spruce Sapling: -1
+        mB Water: -1500
+        Energy: -60000
