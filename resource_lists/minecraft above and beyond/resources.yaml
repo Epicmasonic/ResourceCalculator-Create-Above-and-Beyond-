@@ -59,7 +59,9 @@ recipe_types:
   ## --- Luck Based ---
   Lucky Milling: "Mill {IN_ITEMS} down into {OUT_ITEM} (Not guaranteed)"
   Lucky Crushing: "Crush {IN_ITEMS} down into {OUT_ITEM} (Not guaranteed)"
+  Lucky Washing: "Use a fan behind water to wash {IN_ITEMS} into {OUT_ITEM} (Not guaranteed)"
   Lucky Pulverizer: "Break {IN_ITEMS} down into {OUT_ITEM} using {ITEM Energy} (Not guaranteed)"
+  Lucky Phytogenic Insolator: "Grow {OUT_ITEM} out of {IN_ITEMS} (Not guaranteed)"
 
 requirement_groups:
   ## Forge:Cobblestone
