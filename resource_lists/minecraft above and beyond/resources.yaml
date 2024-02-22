@@ -490,7 +490,7 @@ resources:
     - Output: 4
       recipe_type: Crafting
       requirments:
-        Any Oak Wood Variant: -1
+        Any Oak Log Variant: -1
     - Output: 4
       recipe_type: Crafting
       requirments:
@@ -505,6 +505,8 @@ resources:
         Oak Sign: -1
     - Output: 1
       recipe_type: Cutting
+      requirments:
+        Oak Trapdoor: -1
 
   Spruce Planks:
     recipes:
@@ -519,7 +521,7 @@ resources:
     - Output: 4
       recipe_type: Crafting
       requirments:
-        Any Spruce Wood Variant: -1
+        Any Spruce Log Variant: -1
     - Output: 1
       recipe_type: Cutting
       requirments:
@@ -531,7 +533,7 @@ resources:
     - Output: 1
       recipe_type: Cutting
       requirments:
-        Oak Trapdoor: -1
+        Spruce Trapdoor: -1
 
   Birch Planks:
     recipes:
@@ -546,7 +548,7 @@ resources:
     - Output: 4
       recipe_type: Crafting
       requirments:
-        Any Birch Wood Variant: -1
+        Any Birch Log Variant: -1
     - Output: 1
       recipe_type: Cutting
       requirments:
@@ -557,6 +559,8 @@ resources:
         Birch Sign: -1
     - Output: 1
       recipe_type: Cutting
+      requirments:
+        Birch Trapdoor: -1
 
   Jungle Planks:
     recipes:
@@ -571,7 +575,7 @@ resources:
     - Output: 4
       recipe_type: Crafting
       requirments:
-        Any Jungle Wood Variant: -1
+        Any Jungle Log Variant: -1
     - Output: 1
       recipe_type: Cutting
       requirments:
@@ -582,6 +586,8 @@ resources:
         Jungle Sign: -1
     - Output: 1
       recipe_type: Cutting
+      requirments:
+        Jungle Trapdoor: -1
 
   Acacia Planks:
     recipes:
@@ -596,7 +602,7 @@ resources:
     - Output: 4
       recipe_type: Crafting
       requirments:
-        Any Acacia Wood Variant: -1
+        Any Acacia Log Variant: -1
     - Output: 1
       recipe_type: Cutting
       requirments:
@@ -607,6 +613,8 @@ resources:
         Acacia Sign: -1
     - Output: 1
       recipe_type: Cutting
+      requirments:
+        Acacia Trapdoor: -1
 
   Dark Oak Planks:
     recipes:
@@ -621,7 +629,7 @@ resources:
     - Output: 4
       recipe_type: Crafting
       requirments:
-        Any Dark Oak Wood Variant: -1
+        Any Dark Oak Log Variant: -1
     - Output: 1
       recipe_type: Cutting
       requirments:
@@ -632,6 +640,8 @@ resources:
         Dark Oak Sign: -1
     - Output: 1
       recipe_type: Cutting
+      requirments:
+        Dark Oak Trapdoor: -1
 
   Crimson Planks:
     recipes:
@@ -646,7 +656,7 @@ resources:
     - Output: 4
       recipe_type: Crafting
       requirments:
-        Any Crimson Wood Variant: -1
+        Any Crimson Log Variant: -1
     - Output: 1
       recipe_type: Cutting
       requirments:
@@ -657,6 +667,8 @@ resources:
         Crimson Sign: -1
     - Output: 1
       recipe_type: Cutting
+      requirments:
+        Crimson Trapdoor: -1
 
   Warped Planks:
     recipes:
@@ -671,7 +683,7 @@ resources:
     - Output: 4
       recipe_type: Crafting
       requirments:
-        Any Warped Wood Variant: -1
+        Any Warped Log Variant: -1
     - Output: 1
       recipe_type: Cutting
       requirments:
@@ -682,3 +694,5 @@ resources:
         Warped Sign: -1
     - Output: 1
       recipe_type: Cutting
+      requirments:
+        Warped Trapdoor: -1
