@@ -821,3 +821,379 @@ resources:
         Spruce Sapling: -1
         mB Water: -1500
         Energy: -60000
+
+  Birch Log:
+    recipes:
+    - recipe_type: Raw Resource
+    - output: 16
+      recipe_type: Import
+      requirements:
+        Silver Coin: -4
+    - output: 6
+      recipe_type: Phytogenic Insolator
+      requirements:
+        Birch Sapling: -1
+        mB Water: -1500
+        Energy: -60000
+
+  Jungle Log:
+    recipes:
+    - recipe_type: Raw Resource
+    - output: 16
+      recipe_type: Import
+      requirements:
+        Silver Coin: -4
+    - output: 6
+      recipe_type: Phytogenic Insolator
+      requirements:
+        Jungle Sapling: -1
+        mB Water: -1500
+        Energy: -60000
+
+  Acacia Log:
+    recipes:
+    - recipe_type: Raw Resource
+    - output: 16
+      recipe_type: Import
+      requirements:
+        Silver Coin: -4
+    - output: 6
+      recipe_type: Phytogenic Insolator
+      requirements:
+        Acacia Sapling: -1
+        mB Water: -1500
+        Energy: -60000
+
+  Dark Oak Log:
+    recipes:
+    - recipe_type: Raw Resource
+    - output: 16
+      recipe_type: Import
+      requirements:
+        Silver Coin: -4
+    - output: 6
+      recipe_type: Phytogenic Insolator
+      requirements:
+        Dark Oak Sapling: -1
+        mB Water: -1500
+        Energy: -60000
+
+  Crimson Stem:
+    recipes:
+    - recipe_type: Raw Resource
+    - output: 16
+      recipe_type: Import
+      requirements:
+        Silver Coin: -8
+
+  Warped Stem:
+    recipes:
+    - recipe_type: Raw Resource
+    - output: 16
+      recipe_type: Import
+      requirements:
+        Silver Coin: -8
+
+  Stripped Oak Log:
+    recipes:
+    - output: 1
+      recipe_type: Sawing
+      requirements:
+        Oak Log: -1
+    - output: 1
+      recipe_type: Cutting
+      requirements:
+        Oak Log: -1
+        Tree Bark: 1
+    - recipe_type: Raw Resource
+
+  Stripped Spruce Log:
+    recipes:
+    - output: 1
+      recipe_type: Sawing
+      requirements:
+        Spruce Log: -1
+    - output: 1
+      recipe_type: Cutting
+      requirements:
+        Spruce Log: -1
+        Tree Bark: 1
+    - recipe_type: Raw Resource
+
+  Stripped Birch Log:
+    recipes:
+    - output: 1
+      recipe_type: Sawing
+      requirements:
+        Birch Log: -1
+    - output: 1
+      recipe_type: Cutting
+      requirements:
+        Birch Log: -1
+        Tree Bark: 1
+    - recipe_type: Raw Resource
+
+  Stripped Jungle Log:
+    recipes:
+    - output: 1
+      recipe_type: Sawing
+      requirements:
+        Jungle Log: -1
+    - output: 1
+      recipe_type: Cutting
+      requirements:
+        Jungle Log: -1
+        Tree Bark: 1
+    - recipe_type: Raw Resource
+
+  Stripped Acacia Log:
+    recipes:
+    - output: 1
+      recipe_type: Sawing
+      requirements:
+        Acacia Log: -1
+    - output: 1
+      recipe_type: Cutting
+      requirements:
+        Acacia Log: -1
+        Tree Bark: 1
+    - recipe_type: Raw Resource
+
+  Stripped Dark Oak Log:
+    recipes:
+    - output: 1
+      recipe_type: Sawing
+      requirements:
+        Dark Oak Log: -1
+    - output: 1
+      recipe_type: Cutting
+      requirements:
+        Dark Oak Log: -1
+        Tree Bark: 1
+    - recipe_type: Raw Resource
+
+  Stripped Crimson Stem:
+    recipes:
+    - output: 1
+      recipe_type: Sawing
+      requirements:
+        Crimson Stem: -1
+    - output: 1
+      recipe_type: Cutting
+      requirements:
+        Crimson Stem: -1
+        Tree Bark: 1
+    - recipe_type: Raw Resource
+
+  Stripped Warped Stem:
+    recipes:
+    - output: 1
+      recipe_type: Sawing
+      requirements:
+        Warped Stem: -1
+    - output: 1
+      recipe_type: Cutting
+      requirements:
+        Warped Stem: -1
+        Tree Bark: 1
+    - recipe_type: Raw Resource
+
+  Stripped Oak Wood:
+    recipes:
+    - output: 3
+      recipe_type: Packing
+      requirements:
+        Stripped Oak Log: -4
+    - output: 1
+      recipe_type: Sawing
+      requirements:
+        Oak Wood: -1
+    - output: 1
+      recipe_type: Cutting
+      requirements:
+        Oak Wood: -1
+        Tree Bark: 1
+    - recipe_type: Raw Resource
+
+  Stripped Spruce Wood:
+    recipes:
+    - output: 3
+      recipe_type: Packing
+      requirements:
+        Stripped Spruce Log: -4
+    - output: 1
+      recipe_type: Sawing
+      requirements:
+        Spruce Wood: -1
+    - output: 1
+      recipe_type: Cutting
+      requirements:
+        Spruce Wood: -1
+        Tree Bark: 1
+    - recipe_type: Raw Resource
+
+  Stripped Birch Wood:
+    recipes:
+    - output: 3
+      recipe_type: Packing
+      requirements:
+        Stripped Birch Log: -4
+    - output: 1
+      recipe_type: Sawing
+      requirements:
+        Birch Wood: -1
+    - output: 1
+      recipe_type: Cutting
+      requirements:
+        Birch Wood: -1
+        Tree Bark: 1
+    - recipe_type: Raw Resource
+
+  Stripped Jungle Wood:
+    recipes:
+    - output: 3
+      recipe_type: Packing
+      requirements:
+        Stripped Jungle Log: -4
+    - output: 1
+      recipe_type: Sawing
+      requirements:
+        Jungle Wood: -1
+    - output: 1
+      recipe_type: Cutting
+      requirements:
+        Jungle Wood: -1
+        Tree Bark: 1
+    - recipe_type: Raw Resource
+
+  Stripped Acacia Wood:
+    recipes:
+    - output: 3
+      recipe_type: Packing
+      requirements:
+        Stripped Acacia Log: -4
+    - output: 1
+      recipe_type: Sawing
+      requirements:
+        Acacia Wood: -1
+    - output: 1
+      recipe_type: Cutting
+      requirements:
+        Acacia Wood: -1
+        Tree Bark: 1
+    - recipe_type: Raw Resource
+
+  Stripped Dark Oak Wood:
+    recipes:
+    - output: 3
+      recipe_type: Packing
+      requirements:
+        Stripped Oak Log: -4
+    - output: 1
+      recipe_type: Sawing
+      requirements:
+        Dark Oak Wood: -1
+    - output: 1
+      recipe_type: Cutting
+      requirements:
+        Dark Oak Wood: -1
+        Tree Bark: 1
+    - recipe_type: Raw Resource
+
+  Stripped Crimson Hyphae:
+    recipes:
+    - output: 3
+      recipe_type: Packing
+      requirements:
+        Stripped Crimson Stem: -4
+    - output: 1
+      recipe_type: Sawing
+      requirements:
+        Crimson Hyphae: -1
+    - output: 1
+      recipe_type: Cutting
+      requirements:
+        Crimson Hyphae: -1
+        Tree Bark: 1
+    - recipe_type: Raw Resource
+
+  Stripped Warped Hyphae:
+    recipes:
+    - output: 3
+      recipe_type: Packing
+      requirements:
+        Stripped Warped Stem: -4
+    - output: 1
+      recipe_type: Sawing
+      requirements:
+        Warped Hyphae: -1
+    - output: 1
+      recipe_type: Cutting
+      requirements:
+        Warped Hyphae: -1
+        Tree Bark: 1
+    - recipe_type: Raw Resource
+
+  Oak Wood:
+    recipes:
+    - output: 3
+      recipe_type: Packing
+      requirements:
+        Oak Log: -4
+    - recipe_type: Raw Resource
+
+  Spruce Wood:
+    recipes:
+    - output: 3
+      recipe_type: Packing
+      requirements:
+        Spruce Log: -4
+    - recipe_type: Raw Resource
+
+  Birch Wood:
+    recipes:
+    - output: 3
+      recipe_type: Packing
+      requirements:
+        Birch Log: -4
+    - recipe_type: Raw Resource
+
+  Jungle Wood:
+    recipes:
+    - output: 3
+      recipe_type: Packing
+      requirements:
+        Jungle Log: -4
+    - recipe_type: Raw Resource
+
+  Acacia Wood:
+    recipes:
+    - output: 3
+      recipe_type: Packing
+      requirements:
+        Acacia Log: -4
+    - recipe_type: Raw Resource
+
+  Dark Oak Wood:
+    recipes:
+    - output: 3
+      recipe_type: Packing
+      requirements:
+        Dark Oak Log: -4
+    - recipe_type: Raw Resource
+
+  Crimson Hyphae:
+    recipes:
+    - output: 3
+      recipe_type: Packing
+      requirements:
+        Crimson Stem: -4
+    - recipe_type: Raw Resource
+
+  Warped Hyphae:
+    recipes:
+    - output: 3
+      recipe_type: Packing
+      requirements:
+        Warped Stem: -4
+    - recipe_type: Raw Resource
