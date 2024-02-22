@@ -254,10 +254,6 @@ resources:
       recipe_type: Packing
       requirements:
         Stone Pebble: -9
-    - output: 1
-      recipe_type: Crafting
-      requirements:
-        Stone Pebble: -9
     - recipe_type: Raw Resource
 
   Granite:
@@ -302,10 +298,6 @@ resources:
         Granite: -1
     - output: 4
       recipe_type: Packing
-      requirements:
-        Granite: -4
-    - output: 4
-      recipe_type: Crafting
       requirements:
         Granite: -4
     - recipe_type: Raw Resource
@@ -354,10 +346,6 @@ resources:
       recipe_type: Packing
       requirements:
         Diorite: -4
-    - output: 4
-      recipe_type: Crafting
-      requirements:
-        Diorite: -4
     - recipe_type: Raw Resource
 
   Andesite:
@@ -392,6 +380,18 @@ resources:
       requirements:
         Silver Coin: -3
         Energy: -1000
+    - recipe_type: Raw Resource
+
+  Polished Andesite:
+    recipes:
+    - output: 1
+      recipe_type: Stone Cutting
+      requirements:
+        Andesite: -1
+    - output: 4
+      recipe_type: Packing
+      requirements:
+        Andesite: -4
     - recipe_type: Raw Resource
 
   Grass Block:
