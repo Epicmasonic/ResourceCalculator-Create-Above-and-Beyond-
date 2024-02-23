@@ -57,11 +57,18 @@ recipe_types:
   Sell: "Sell {IN_ITEMS} for {OUT_ITEM} using {ITEM Energy}"
 
   ## --- Luck Based ---
-  Lucky Milling: "Mill {IN_ITEMS} down into {OUT_ITEM} (Not guaranteed)"
-  Lucky Crushing: "Crush {IN_ITEMS} down into {OUT_ITEM} (Not guaranteed)"
-  Lucky Washing: "Use a fan behind water to wash {IN_ITEMS} into {OUT_ITEM} (Not guaranteed)"
-  Lucky Pulverizer: "Break {IN_ITEMS} down into {OUT_ITEM} using {ITEM Energy} (Not guaranteed)"
-  Lucky Phytogenic Insolator: "Grow {OUT_ITEM} out of {IN_ITEMS} (Not guaranteed)"
+  Milling (Chance): "Mill {IN_ITEMS} down into {OUT_ITEM} (Output not guaranteed)"
+  Crushing (Chance): "Crush {IN_ITEMS} down into {OUT_ITEM} (Output not guaranteed)"
+  Washing (Chance): "Use a fan behind water to wash {IN_ITEMS} into {OUT_ITEM} (Output not guaranteed)"
+  Pulverizer (Chance): "Break {IN_ITEMS} down into {OUT_ITEM} using {ITEM Energy} (Output not guaranteed)"
+  Phytogenic Insolator (Chance): "Grow {OUT_ITEM} out of {IN_ITEMS} (Output not guaranteed)"
+
+  ## --- Has Byproduct ---
+  Pulverizer (Byproduct): "Break {IN_ITEMS} down into {OUT_ITEM} using {ITEM Energy} (Will generate byproducts)"
+  Cutting (Byproduct): "Cut {IN_ITEMS} up into {OUT_ITEM} (Will generate byproducts)"
+
+  ## --- Both Luck Based and Has Byproduct ---
+  Pulverizer (Chance + Byproduct): "Break {IN_ITEMS} down into {OUT_ITEM} using {ITEM Energy} (Output not guaranteed) (Will generate byproducts)"
 
 requirement_groups:
   ## Forge:Cobblestone
@@ -457,40 +464,40 @@ resources:
         Stone Reagent: -1
         Energy: -2000
     - output: 1
-      recipe_type: Pulverizer
+      recipe_type: Pulverizer (Byproduct)
       requirements:
         Granite: -1
-        Nether Quartz Dust: 2
+        ## Nether Quartz Dust: 2
         Energy: -4000
     - output: 1
-      recipe_type: Pulverizer
+      recipe_type: Pulverizer (Byproduct)
       requirements:
         Polished Granite: -1
-        Nether Quartz Dust: 2
+        ## Nether Quartz Dust: 2
         Energy: -4000
     - output: 1
-      recipe_type: Pulverizer
+      recipe_type: Pulverizer (Byproduct)
       requirements:
         Diorite: -1
-        Nether Quartz Dust: 1
+        ## Nether Quartz Dust: 1
         Energy: -4000
     - output: 1
-      recipe_type: Pulverizer
+      recipe_type: Pulverizer (Byproduct)
       requirements:
         Polished Diorite: -1
-        Nether Quartz Dust: 1
+        ## Nether Quartz Dust: 1
         Energy: -4000
     - output: 2
-      recipe_type: Pulverizer
+      recipe_type: Pulverizer (Byproduct)
       requirements:
         Andesite: -2
-        Nether Quartz Dust: 1
+        ## Nether Quartz Dust: 1
         Energy: -4000
     - output: 2
-      recipe_type: Pulverizer
+      recipe_type: Pulverizer (Byproduct)
       requirements:
         Polished Andesite: -2
-        Nether Quartz Dust: 1
+        ## Nether Quartz Dust: 1
         Energy: -4000
 
   Oak Planks:
@@ -733,10 +740,10 @@ resources:
       requirements:
         Silver Coin: -4
     - output: 1
-      recipe_type: Lucky Pulverizer
+      recipe_type: Pulverizer (Chance + Byproduct)
       requirements:
         Any Cobblestone Variant: -1
-        Gravel: 1
+        ## Gravel: 1
         Energy: -4000
     - output: 1
       recipe_type: Pulverizer
@@ -909,10 +916,10 @@ resources:
       requirements:
         Oak Log: -1
     - output: 1
-      recipe_type: Cutting
+      recipe_type: Cutting (Byproduct)
       requirements:
         Oak Log: -1
-        Tree Bark: 1
+        ## Tree Bark: 1
     - recipe_type: Raw Resource
 
   Stripped Spruce Log:
@@ -922,10 +929,10 @@ resources:
       requirements:
         Spruce Log: -1
     - output: 1
-      recipe_type: Cutting
+      recipe_type: Cutting (Byproduct)
       requirements:
         Spruce Log: -1
-        Tree Bark: 1
+        ## Tree Bark: 1
     - recipe_type: Raw Resource
 
   Stripped Birch Log:
@@ -935,10 +942,10 @@ resources:
       requirements:
         Birch Log: -1
     - output: 1
-      recipe_type: Cutting
+      recipe_type: Cutting (Byproduct)
       requirements:
         Birch Log: -1
-        Tree Bark: 1
+        ## Tree Bark: 1
     - recipe_type: Raw Resource
 
   Stripped Jungle Log:
@@ -948,10 +955,10 @@ resources:
       requirements:
         Jungle Log: -1
     - output: 1
-      recipe_type: Cutting
+      recipe_type: Cutting (Byproduct)
       requirements:
         Jungle Log: -1
-        Tree Bark: 1
+        ## Tree Bark: 1
     - recipe_type: Raw Resource
 
   Stripped Acacia Log:
@@ -961,10 +968,10 @@ resources:
       requirements:
         Acacia Log: -1
     - output: 1
-      recipe_type: Cutting
+      recipe_type: Cutting (Byproduct)
       requirements:
         Acacia Log: -1
-        Tree Bark: 1
+        ## Tree Bark: 1
     - recipe_type: Raw Resource
 
   Stripped Dark Oak Log:
@@ -974,10 +981,10 @@ resources:
       requirements:
         Dark Oak Log: -1
     - output: 1
-      recipe_type: Cutting
+      recipe_type: Cutting (Byproduct)
       requirements:
         Dark Oak Log: -1
-        Tree Bark: 1
+        ## Tree Bark: 1
     - recipe_type: Raw Resource
 
   Stripped Crimson Stem:
@@ -987,10 +994,10 @@ resources:
       requirements:
         Crimson Stem: -1
     - output: 1
-      recipe_type: Cutting
+      recipe_type: Cutting (Byproduct)
       requirements:
         Crimson Stem: -1
-        Tree Bark: 1
+        ## Tree Bark: 1
     - recipe_type: Raw Resource
 
   Stripped Warped Stem:
@@ -1000,10 +1007,10 @@ resources:
       requirements:
         Warped Stem: -1
     - output: 1
-      recipe_type: Cutting
+      recipe_type: Cutting (Byproduct)
       requirements:
         Warped Stem: -1
-        Tree Bark: 1
+        ## Tree Bark: 1
     - recipe_type: Raw Resource
 
   Stripped Oak Wood:
@@ -1017,10 +1024,10 @@ resources:
       requirements:
         Oak Wood: -1
     - output: 1
-      recipe_type: Cutting
+      recipe_type: Cutting (Byproduct)
       requirements:
         Oak Wood: -1
-        Tree Bark: 1
+        ## Tree Bark: 1
     - recipe_type: Raw Resource
 
   Stripped Spruce Wood:
@@ -1034,10 +1041,10 @@ resources:
       requirements:
         Spruce Wood: -1
     - output: 1
-      recipe_type: Cutting
+      recipe_type: Cutting (Byproduct)
       requirements:
         Spruce Wood: -1
-        Tree Bark: 1
+        ## Tree Bark: 1
     - recipe_type: Raw Resource
 
   Stripped Birch Wood:
@@ -1051,10 +1058,10 @@ resources:
       requirements:
         Birch Wood: -1
     - output: 1
-      recipe_type: Cutting
+      recipe_type: Cutting (Byproduct)
       requirements:
         Birch Wood: -1
-        Tree Bark: 1
+        ## Tree Bark: 1
     - recipe_type: Raw Resource
 
   Stripped Jungle Wood:
@@ -1068,10 +1075,10 @@ resources:
       requirements:
         Jungle Wood: -1
     - output: 1
-      recipe_type: Cutting
+      recipe_type: Cutting (Byproduct)
       requirements:
         Jungle Wood: -1
-        Tree Bark: 1
+        ## Tree Bark: 1
     - recipe_type: Raw Resource
 
   Stripped Acacia Wood:
@@ -1085,10 +1092,10 @@ resources:
       requirements:
         Acacia Wood: -1
     - output: 1
-      recipe_type: Cutting
+      recipe_type: Cutting (Byproduct)
       requirements:
         Acacia Wood: -1
-        Tree Bark: 1
+        ## Tree Bark: 1
     - recipe_type: Raw Resource
 
   Stripped Dark Oak Wood:
@@ -1102,10 +1109,10 @@ resources:
       requirements:
         Dark Oak Wood: -1
     - output: 1
-      recipe_type: Cutting
+      recipe_type: Cutting (Byproduct)
       requirements:
         Dark Oak Wood: -1
-        Tree Bark: 1
+        ## Tree Bark: 1
     - recipe_type: Raw Resource
 
   Stripped Crimson Hyphae:
@@ -1119,10 +1126,10 @@ resources:
       requirements:
         Crimson Hyphae: -1
     - output: 1
-      recipe_type: Cutting
+      recipe_type: Cutting (Byproduct)
       requirements:
         Crimson Hyphae: -1
-        Tree Bark: 1
+        ## Tree Bark: 1
     - recipe_type: Raw Resource
 
   Stripped Warped Hyphae:
@@ -1136,10 +1143,10 @@ resources:
       requirements:
         Warped Hyphae: -1
     - output: 1
-      recipe_type: Cutting
+      recipe_type: Cutting (Byproduct)
       requirements:
         Warped Hyphae: -1
-        Tree Bark: 1
+        ## Tree Bark: 1
     - recipe_type: Raw Resource
 
   Oak Wood:
