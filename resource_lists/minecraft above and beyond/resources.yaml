@@ -17,9 +17,14 @@ recipe_types:
 
   ## --- Create ---
   ## Mechanical Press
+  Packing: "Use a mechanical press over a basin to pack {IN_ITEMS} into {OUT_ITEM} (Crafting also works)"
   Pressing: "Press {IN_ITEMS} into {OUT_ITEM}"
-  Compacting: "Use a press over a basin to compact {IN_ITEMS} into {OUT_ITEM}"
-  Bulk Packing: "Use a press over a basin to pack {IN_ITEMS} into {OUT_ITEM}"
+  Compacting: "Use a mechanical press over a basin to compact {IN_ITEMS} into {OUT_ITEM}"
+  ## Mechanical Mixing
+  Mixing: "Mix {IN_ITEMS} together into {OUT_ITEM}"
+  Shapeless: "Mix {IN_ITEMS} together into {OUT_ITEM} (Crafting also works)"
+  Heated Mixing: "Mix {IN_ITEMS} together over a blaze burner to create {OUT_ITEM}"
+  Super-Heated Mixing: "Mix {IN_ITEMS} together over a super-heated blaze burner to create {OUT_ITEM}"
   ## Mechanical Fan
   Bulk Washing: "Use a fan behind water to wash {IN_ITEMS} into {OUT_ITEM}"
   Bulk Blasting: "Use a fan behind lava to smelt {IN_ITEMS} into {OUT_ITEM}"
@@ -1329,7 +1334,7 @@ resources:
         Sandstone: -4
     - recipe_type: Raw Resource
 
-  White Woll:
+  White Wool:
     recipes:
     - output: 1
       recipe_type: Packing
@@ -1339,4 +1344,175 @@ resources:
       recipe_type: Import
       requirements:
         Silver Coin: -8
+    - recipe_type: Raw Resource
+
+  Orange Wool:
+    recipes:
+    - output: 1
+      recipe_type: Shapeless
+      requirements:
+        Orange Dye: -1
+        White Wool: -1
+    - recipe_type: Raw Resource
+
+  Magenta Wool:
+    recipes:
+    - output: 1
+      recipe_type: Shapeless
+      requirements:
+        Magenta Dye: -1
+        White Wool: -1
+    - recipe_type: Raw Resource
+
+  Light Blue Wool:
+    recipes:
+    - output: 1
+      recipe_type: Shapeless
+      requirements:
+        Light Blue Dye: -1
+        White Wool: -1
+    - recipe_type: Raw Resource
+
+  Yellow Wool:
+    recipes:
+    - output: 1
+      recipe_type: Shapeless
+      requirements:
+        Yellow Dye: -1
+        White Wool: -1
+    - recipe_type: Raw Resource
+
+  Lime Wool:
+    recipes:
+    - output: 1
+      recipe_type: Shapeless
+      requirements:
+        Lime Dye: -1
+        White Wool: -1
+    - recipe_type: Raw Resource
+
+  Pink Wool:
+    recipes:
+    - output: 1
+      recipe_type: Shapeless
+      requirements:
+        Pink Dye: -1
+        White Wool: -1
+    - recipe_type: Raw Resource
+
+  Gray Wool:
+    recipes:
+    - output: 1
+      recipe_type: Shapeless
+      requirements:
+        Gray Dye: -1
+        White Wool: -1
+    - recipe_type: Raw Resource
+
+  Light Gray Wool:
+    recipes:
+    - output: 1
+      recipe_type: Shapeless
+      requirements:
+        Light Gray Dye: -1
+        White Wool: -1
+    - recipe_type: Raw Resource
+
+  Cyan Wool:
+    recipes:
+    - output: 1
+      recipe_type: Shapeless
+      requirements:
+        Cyan Dye: -1
+        White Wool: -1
+    - recipe_type: Raw Resource
+
+  Purple Wool:
+    recipes:
+    - output: 1
+      recipe_type: Shapeless
+      requirements:
+        Purple Dye: -1
+        White Wool: -1
+    - recipe_type: Raw Resource
+
+  Blue Wool:
+    recipes:
+    - output: 1
+      recipe_type: Shapeless
+      requirements:
+        Blue Dye: -1
+        White Wool: -1
+    - recipe_type: Raw Resource
+
+  Brown Wool:
+    recipes:
+    - output: 1
+      recipe_type: Shapeless
+      requirements:
+        Brown Dye: -1
+        White Wool: -1
+    - recipe_type: Raw Resource
+
+  Green Wool:
+    recipes:
+    - output: 1
+      recipe_type: Shapeless
+      requirements:
+        Green Dye: -1
+        White Wool: -1
+    - recipe_type: Raw Resource
+
+  Red Wool:
+    recipes:
+    - output: 1
+      recipe_type: Shapeless
+      requirements:
+        Red Dye: -1
+        White Wool: -1
+    - recipe_type: Raw Resource
+
+  Black Wool:
+    recipes:
+    - output: 1
+      recipe_type: Shapeless
+      requirements:
+        Black Dye: -1
+        White Wool: -1
+    - recipe_type: Raw Resource
+
+  Gold Block:
+    recipes:
+    - output: 1
+      recipe_type: Packing
+      requirements:
+        Gold Ingot: -9
+    - output: 1
+      recipe_type: Casting Basin
+      requirements:
+        mB Molten Gold: -1296
+    - recipe_type: Raw Resource
+
+  Iron Block:
+    recipes:
+    - output: 1
+      recipe_type: Packing
+      requirements:
+        Iron Ingot: -9
+    - output: 1
+      recipe_type: Casting Basin
+      requirements:
+        mB Molten Iron: -1296
+    - recipe_type: Raw Resource
+
+  Oak Slab:
+    recipes:
+    - output: 2
+      recipe_type: Sawing
+      requirements:
+        Oak Planks: -1
+    - output: 6
+      recipe_type: Crafting
+      requirements:
+        Oak Planks: -3
     - recipe_type: Raw Resource
