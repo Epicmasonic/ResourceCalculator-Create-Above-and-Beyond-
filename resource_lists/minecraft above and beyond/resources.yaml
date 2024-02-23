@@ -1227,13 +1227,13 @@ resources:
       requirements:
         Wet Sponge: -1
         Energy: -2000
-    - output: 1
 
   Wet Sponge:
     recipes:
     - recipe_type: Raw Resource
 
   Glass:
+    recipes:
     - output: 1
       recipe_type: Bulk Blasting
       requirements:
@@ -1249,7 +1249,6 @@ resources:
         Any Sand Variant: -1
         Energy: -2000
     - output: 1
-    - output: 1
       recipe_type: Bulk Blasting
       requirements:
         Glass Spines: -1
@@ -1263,15 +1262,74 @@ resources:
       requirements:
         Glass Spines: -1
         Energy: -2000
-    - output: 1
     - recipe_type: Raw Resource
 
   Lapis Lazuli Ore:
+    recipes:
     - recipe_type: Raw Resource
 
   Lapis Lazuli Block:
+    recipes:
     - output: 1
       recipe_type: Packing
       requirements:
         Lapis Lazuli: -9
+    - recipe_type: Raw Resource
+
+  Sandstone:
+    recipes:
+    - output: 1
+      recipe_type: Packing
+      requirements:
+        Sand: -4
+    - output: 1
+      recipe_type: Bulk Blasting
+      requirements:
+        Cobbled Sandstone: -1
+    - output: 1
+      recipe_type: Smelting
+      requirements:
+        Cobbled Sandstone: -1
+        Fuel: -1
+    - output: 1
+      recipe_type: Electric Smelting
+      requirements:
+        Cobbled Sandstone: -1
+        Energy: -2000
+    - recipe_type: Raw Resource
+
+  Chiseled Sandstone:
+    recipes:
+    - output: 1
+      recipe_type: Sawing
+      requirements:
+        Sandstone: -1
+    - output: 1
+      recipe_type: Crafting
+      requirements:
+        Sandstone Slab: -2
+    - recipe_type: Raw Resource
+
+  Cut Sandstone:
+    recipes:
+    - output: 1
+      recipe_type: Sawing
+      requirements:
+        Sandstone: -1
+    - output: 1
+      recipe_type: Packing
+      requirements:
+        Sandstone: -4
+    - recipe_type: Raw Resource
+
+  White Woll:
+    recipes:
+    - output: 1
+      recipe_type: Packing
+      requirements:
+        Sting: -4
+    - output: 1
+      recipe_type: Import
+      requirements:
+        Silver Coin: -8
     - recipe_type: Raw Resource
